@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as Student</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f4ff, #e6f0ff);
+        }
+
+        .student-form-section {
+            padding: 50px 20px;
+        }
+
+        .form-card {
+            background-color: #fff;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-card h2 {
+            color: #1e90ff;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .form-card p {
+            color: #555;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .google-form-iframe {
+            width: 100%;
+            min-height: 800px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .google-form-iframe { min-height: 1000px; }
+        }
+
+        @media screen and (max-width: 480px) {
+            .google-form-iframe { min-height: 1200px; }
+        }
+
+        .form-card p.footer-text {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="student-form-section">
+    <div class="container">
+        <div class="form-card">
+            <h2>🎓 Join as a Student Today!</h2>
+            <p>Fill out this form to connect with expert tutors worldwide. Tell us your details and the exam or subject you want to study. We’ll help you find the perfect tutor quickly and easily!</p>
+
+            <!-- Embedded Google Form -->
+            <iframe class="google-form-iframe"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdJPr_97zwQgoPnIFyNYhFobffCInzhkFyEv8t8btyE7waUpw/viewform?usp=header">
+                Loading…
+            </iframe>
+
+            <p class="footer-text">
+                We respond quickly – connect today!
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
